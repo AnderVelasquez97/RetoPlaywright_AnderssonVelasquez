@@ -3,7 +3,7 @@ Este repositorio contiene los casos de prueba automatizados para la plataforma O
 
 ## Casos de prueba identificados
 
-####1. Acceso a la Plataforma
+#### 1. Acceso a la Plataforma
 Descripción: Verificar que se pueda acceder correctamente a la plataforma OrangeHRM.
 
 Precondiciones:
@@ -16,7 +16,7 @@ Acceder a OrangeHRM.
 Resultado esperado:
 La página de inicio de sesión se carga correctamente.
 
-####2. Inicio de Sesión Correcto
+#### 2. Inicio de Sesión Correcto
 Descripción: Validar que un usuario con credenciales válidas pueda iniciar sesión en la plataforma.
 
 Precondiciones:
@@ -30,7 +30,11 @@ Hacer clic en el botón de Iniciar Sesión.
 Resultado esperado:
 El sistema muestra el menú principal del usuario autenticado.
 
-####3. Registro de un Nuevo Empleado
+| usuario | contrasena | Nombre        |
+|---------|------------|---------------|
+| Admin   | admin123   | Souheil Gagui |
+
+#### 3. Registro de un Nuevo Empleado
 Descripción: Registrar un nuevo empleado con los datos completos.
 
 Precondiciones:
@@ -49,7 +53,11 @@ Hacer clic en Guardar.
 Resultado esperado:
 El nuevo empleado se registra exitosamente.
 
-####4. Validación del Empleado Registrado
+| usuario | contrasena | firstName | middleName | lastName | ID       |
+|---------|------------|-----------|------------|----------|----------|
+| Admin   | admin123   | Juan      | Vega       | Gagui    | 12252345 |
+
+#### 4. Validación del Empleado Registrado
 Descripción: Verificar que el nuevo empleado aparezca en la lista de empleados.
 
 Precondiciones:
@@ -66,27 +74,32 @@ El nuevo empleado aparece en la lista con los datos correctos.
 ## Guia de Instalación
 A partir de esta sección se vera temas técnicos para la instalación y uso del proyecto
 
-###1. Clonar este repositorio:
+### 1. Clonar este repositorio:
 git clone <https://github.com/AnderVelasquez97/RetoPlaywright_AnderssonVelasquez>
 cd <RetoPlaywright_AnderssonVelasquez>
 
 
-###2. Instalar dependencias
+### 2. Instalar dependencias
 En el terminal ingresar:
 npm install
 
-###3. Ejecutar las pruebas con Cucumber
+### 3. Ejecutar las pruebas con Cucumber
 npx cucumber-js
 
 ## Estructura del proyecto
 
 |-- features/          # Archivos .feature con los escenarios de prueba
+
 |-- pages/             # Clases de Page Object Model
+
 |-- selectors/         # Definición de las ubicaciones de input y buttons
+
 |-- steps/             # Definición de los pasos (step definitions)
+
 |-- README.md          # Instrucciones y documentación del proyecto
 
-##Contacto
+
+## Contacto
 Si tienes preguntas o sugerencias, contáctame a través de eduardovrx@gmail.com
 
 
