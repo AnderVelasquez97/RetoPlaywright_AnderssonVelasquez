@@ -1,6 +1,9 @@
 # Desafío Automatización de Pruebas - OrangeHRM
 Este repositorio contiene los casos de prueba automatizados para la plataforma OrangeHRM. A continuación se describen los casos de prueba identificados, junto con los pasos de ejecución y los resultados esperados. 
 
+## Técnica de diseño de casos de prueba
+Pruebas Basadas en Casos de Uso (Use Case Testing), ya que los casos de prueba se diseñaron siguiendo los escenarios definidos en los casos de uso de la aplicación por los cuales interactúa el usuario.
+
 ## Casos de prueba identificados
 
 #### 1. Acceso a la Plataforma
