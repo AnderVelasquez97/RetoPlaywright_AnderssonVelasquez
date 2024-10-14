@@ -1,0 +1,140 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "challenge-orangehrm;validar-inicio-de-sesión-correcto",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Validar inicio de sesión correcto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Me encuentro en la página de login",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10139503500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Ingreso las credenciales correctas \"Admin\", \"admin123\"",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1264377599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Debo visualizar el nombre de usuario \"Souheil Gagui\"",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4295700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "challenge-orangehrm;crear-nuevo-empleado",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Crear nuevo empleado",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "Me encuentro en la página de login",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2660493300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Ingreso las credenciales correctas \"Admin\", \"admin123\"",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1320985500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "Me encuentro en la página de empleados",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 273256199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Registro nuevo empleado con \"Carlos\", \"Vega\", \"Gagui\", \"12523453\"",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 641333900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Debo visualizar que se creó el nuevo empleado",
+            "match": {
+              "location": "tests\\steps\\OHR.steps.ts:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8316899,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\andersson.velasquez\\IdeaProjects\\Challenge OrangeHRM\\node_modules\\playwright\\lib\\matchers\\expect.js:225:37)\n    at World.<anonymous> (C:\\Users\\andersson.velasquez\\IdeaProjects\\Challenge OrangeHRM\\tests\\steps\\OHR.steps.ts:43:26)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "challenge-orangehrm",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Challenge OrangeHRM",
+    "tags": [],
+    "uri": "tests\\features\\OHR.feature"
+  }
+]
